@@ -1,0 +1,4 @@
+sockets\conexion\Conexion.class
+sockets\servidor\Servidor.class
+principal\Main.class
+sockets\cliente\Cliente.class
