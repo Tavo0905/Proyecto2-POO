@@ -6,7 +6,10 @@ import java.net.Socket;
 
 public class ServidorVuelos implements Runnable {
     
+    BaseDatos datos;
+    
     public ServidorVuelos() {
+        datos = new BaseDatos();
         Thread hilo = new Thread(this);
         hilo.start();
     }
@@ -19,8 +22,12 @@ public class ServidorVuelos implements Runnable {
                 Socket cliente = servidor.accept();
                 DataInputStream recibirMensaje = new DataInputStream(cliente.getInputStream());
                 String mensaje = recibirMensaje.readUTF();
-                System.out.println(mensaje);
-                ClienteInfo informacion = new ClienteInfo(mensaje);
+                //System.out.println(mensaje);
+                datos.IDAviones.add(mensaje);
+                if (!datos.IDAviones.isEmpty()){
+                    ClienteInfo informacion = new ClienteInfo(datos.IDAviones.get(0));
+                    ClienteVControl VentanaC =  new ClienteVControl(datos.IDAviones.remove(0));
+                }
             }
         }
         catch (Exception e) {

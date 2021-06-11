@@ -16,9 +16,9 @@ import java.util.logging.Logger;
 
 public class hiloAviones extends Thread {
 
-            Cliente socketClient;
-    
-     
+        Cliente socketClient;
+        
+        
        
         
         public void detener(){
