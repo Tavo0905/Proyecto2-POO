@@ -33,7 +33,16 @@ public class ServidorVuelos implements Runnable {
                 datos.aterrizando.add(nuevo);
                 System.out.println(datos.aterrizando);
                 
+                //metodo alternativo, lo trataré si lo de mandar directo no funca
+                //copia de IDAviones , se usara para enviar estos a ventana
+                //datos.copia_ID_aterrizando.add(mensaje);
                 
+                //mandar directo a ventana controlador los ids conforme se reciben
+                if (!datos.IDAviones.isEmpty()){
+                    ClienteVControl VentanaC =  new ClienteVControl(mensaje);
+                    System.out.println("envie "+mensaje+" a ventana GUI!\n");
+                    
+                }
                 
                 //para mandarlos a ventana control y a ventana informacion
                 /*

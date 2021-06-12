@@ -56,7 +56,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
         setTitle("Ventana Controlador");
         setBackground(new java.awt.Color(0, 0, 0));
 
-        id_label.setText("ID");
+        id_label.setText("1234 label 1");
 
         jLabel2.setText("Pista:");
 
@@ -86,7 +86,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label1.setText("ID");
+        id_label1.setText("a");
 
         jLabel3.setText("Pista:");
 
@@ -116,7 +116,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label2.setText("ID");
+        id_label2.setText("label_3");
 
         jLabel4.setText("Pista:");
 
@@ -146,8 +146,6 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label3.setText("ID");
-
         jLabel5.setText("Pista:");
 
         comboBox_pistas3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
@@ -175,8 +173,6 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                     .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(37, 37, 37))
         );
-
-        id_label4.setText("ID");
 
         jLabel6.setText("Pista:");
 
@@ -206,7 +202,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label5.setText("ID");
+        id_label5.setText("a");
 
         jLabel7.setText("Pista:");
 
@@ -311,18 +307,18 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> comboBox_pistas;
-    private javax.swing.JComboBox<String> comboBox_pistas1;
-    private javax.swing.JComboBox<String> comboBox_pistas2;
-    private javax.swing.JComboBox<String> comboBox_pistas3;
-    private javax.swing.JComboBox<String> comboBox_pistas4;
-    private javax.swing.JComboBox<String> comboBox_pistas5;
-    private javax.swing.JLabel id_label;
-    private javax.swing.JLabel id_label1;
-    private javax.swing.JLabel id_label2;
-    private javax.swing.JLabel id_label3;
-    private javax.swing.JLabel id_label4;
-    private javax.swing.JLabel id_label5;
+    public static javax.swing.JComboBox<String> comboBox_pistas;
+    public static javax.swing.JComboBox<String> comboBox_pistas1;
+    public static javax.swing.JComboBox<String> comboBox_pistas2;
+    public static javax.swing.JComboBox<String> comboBox_pistas3;
+    public static javax.swing.JComboBox<String> comboBox_pistas4;
+    public static javax.swing.JComboBox<String> comboBox_pistas5;
+    public static javax.swing.JLabel id_label;
+    public static javax.swing.JLabel id_label1;
+    public static javax.swing.JLabel id_label2;
+    public static javax.swing.JLabel id_label3;
+    public static javax.swing.JLabel id_label4;
+    public static javax.swing.JLabel id_label5;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

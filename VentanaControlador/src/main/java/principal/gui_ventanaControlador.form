@@ -101,8 +101,11 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="id_label">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID"/>
+            <Property name="text" type="java.lang.String" value="1234 label 1"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
@@ -125,6 +128,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
       </SubComponents>
@@ -162,8 +166,11 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="id_label1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID"/>
+            <Property name="text" type="java.lang.String" value="a"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
@@ -186,6 +193,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
       </SubComponents>
@@ -223,8 +231,11 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="id_label2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID"/>
+            <Property name="text" type="java.lang.String" value="label_3"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
@@ -247,6 +258,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
       </SubComponents>
@@ -283,9 +295,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="id_label3">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="ID"/>
-          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
@@ -308,6 +320,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
       </SubComponents>
@@ -344,9 +357,9 @@
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="id_label4">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="ID"/>
-          </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
@@ -369,6 +382,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
       </SubComponents>
@@ -406,8 +420,11 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="id_label5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="ID"/>
+            <Property name="text" type="java.lang.String" value="a"/>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
@@ -430,6 +447,7 @@
           </Properties>
           <AuxValues>
             <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
           </AuxValues>
         </Component>
       </SubComponents>
