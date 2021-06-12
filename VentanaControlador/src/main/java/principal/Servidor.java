@@ -6,6 +6,7 @@ import java.net.Socket;
 
 public class Servidor implements Runnable {
     
+    
     public Servidor() {
         Thread hilo = new Thread(this);
         hilo.start();
@@ -36,6 +37,7 @@ public class Servidor implements Runnable {
     @Override
     public void run() {
         try {
+            gui_ventanaControlador ventana = new gui_ventanaControlador();
             ServerSocket servidor = new ServerSocket(8888);
             while (true) {
                 Socket cliente = servidor.accept();
@@ -46,7 +48,7 @@ public class Servidor implements Runnable {
                 // asignar a los labels de GUI cada mensaje ingresado
                 
                 //por estas 3 lineas se esta yendo a la excepcion... wtf?
-                String variable = gui_ventanaControlador.id_label.getText();
+                String variable = ventana.id_label.getText();
                 System.out.println(variable);
                 //System.out.println(gui_ventanaControlador.id_label1.getText());
                 //System.out.println(gui_ventanaControlador.id_label2.getText());
