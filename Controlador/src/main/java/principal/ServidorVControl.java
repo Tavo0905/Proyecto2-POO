@@ -6,7 +6,10 @@ import java.net.Socket;
 
 public class ServidorVControl implements Runnable {
     
-    public ServidorVControl() {
+    BaseDatos datos;
+    
+    public ServidorVControl(BaseDatos pBase) {
+        datos = pBase;
         Thread hilo = new Thread(this);
         hilo.start();
     }
@@ -19,7 +22,10 @@ public class ServidorVControl implements Runnable {
                 Socket cliente = servidor.accept();
                 DataInputStream recibirMensaje = new DataInputStream(cliente.getInputStream());
                 String mensaje = recibirMensaje.readUTF();
+                System.out.println("\n===============================");
+                System.out.println("\nllegando a cont desde ventana : ");
                 System.out.println(mensaje);
+                System.out.println("===============================\n");
             }
         }
         catch (Exception e) {

@@ -5,6 +5,9 @@
  */
 package principal;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author mauar
@@ -17,6 +20,11 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
     public gui_ventanaControlador() {
         initComponents();
     }
+    
+    //para setear los labels
+    ArrayList<String> pistasEnUso = new ArrayList<>();
+    //para enviar desde v.controlador a control, la pista asignada a tal avion
+    ArrayList<String> pistas_ID = new ArrayList<>();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -56,11 +64,16 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
         setTitle("Ventana Controlador");
         setBackground(new java.awt.Color(0, 0, 0));
 
-        id_label.setText("1234 label 1");
+        id_label.setText("ID");
 
         jLabel2.setText("Pista:");
 
         comboBox_pistas.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_pistas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox_pistasActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -86,11 +99,16 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label1.setText("a");
+        id_label1.setText("ID");
 
         jLabel3.setText("Pista:");
 
         comboBox_pistas1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_pistas1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox_pistas1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -116,11 +134,16 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label2.setText("label_3");
+        id_label2.setText("ID");
 
         jLabel4.setText("Pista:");
 
         comboBox_pistas2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_pistas2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox_pistas2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -146,9 +169,16 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
+        id_label3.setText("ID");
+
         jLabel5.setText("Pista:");
 
         comboBox_pistas3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_pistas3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox_pistas3ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -174,9 +204,16 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
+        id_label4.setText("ID");
+
         jLabel6.setText("Pista:");
 
         comboBox_pistas4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_pistas4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox_pistas4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -202,11 +239,16 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
-        id_label5.setText("a");
+        id_label5.setText("ID");
 
         jLabel7.setText("Pista:");
 
         comboBox_pistas5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_pistas5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboBox_pistas5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -269,6 +311,97 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void comboBox_pistasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_pistasActionPerformed
+        String seleccionado = comboBox_pistas.getSelectedItem().toString();
+        if(pistasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Pista en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            pistasEnUso.add(seleccionado);
+            System.out.println(pistasEnUso);
+            
+            String avion = id_label.getText();
+            pistas_ID.add(seleccionado+"_"+avion);
+            System.out.println(pistas_ID);
+            
+        }
+    }//GEN-LAST:event_comboBox_pistasActionPerformed
+
+    private void comboBox_pistas1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_pistas1ActionPerformed
+        String seleccionado = comboBox_pistas1.getSelectedItem().toString();
+        if(pistasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Pista en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            pistasEnUso.add(seleccionado);
+            System.out.println(pistasEnUso);
+            
+            String avion = id_label1.getText();
+            pistas_ID.add(seleccionado+"_"+avion);
+            System.out.println(pistas_ID);
+        }
+    }//GEN-LAST:event_comboBox_pistas1ActionPerformed
+
+    private void comboBox_pistas2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_pistas2ActionPerformed
+        String seleccionado = comboBox_pistas2.getSelectedItem().toString();
+        if(pistasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Pista en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            pistasEnUso.add(seleccionado);
+            System.out.println(pistasEnUso);
+            
+            String avion = id_label2.getText();
+            pistas_ID.add(seleccionado+"_"+avion);
+            System.out.println(pistas_ID);
+        }
+    }//GEN-LAST:event_comboBox_pistas2ActionPerformed
+
+    private void comboBox_pistas3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_pistas3ActionPerformed
+        String seleccionado = comboBox_pistas3.getSelectedItem().toString();
+        if(pistasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Pista en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            pistasEnUso.add(seleccionado);
+            System.out.println(pistasEnUso);
+            
+            String avion = id_label3.getText();
+            pistas_ID.add(seleccionado+"_"+avion);
+            System.out.println(pistas_ID);
+        }
+    }//GEN-LAST:event_comboBox_pistas3ActionPerformed
+
+    private void comboBox_pistas4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_pistas4ActionPerformed
+        String seleccionado = comboBox_pistas4.getSelectedItem().toString();
+        if(pistasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Pista en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            pistasEnUso.add(seleccionado);
+            System.out.println(pistasEnUso);
+            
+            String avion = id_label4.getText();
+            pistas_ID.add(seleccionado+"_"+avion);
+            System.out.println(pistas_ID);
+        }
+    }//GEN-LAST:event_comboBox_pistas4ActionPerformed
+
+    private void comboBox_pistas5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_pistas5ActionPerformed
+        String seleccionado = comboBox_pistas5.getSelectedItem().toString();
+        if(pistasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Pista en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            pistasEnUso.add(seleccionado);
+            System.out.println(pistasEnUso);
+            
+            String avion = id_label5.getText();
+            pistas_ID.add(seleccionado+"_"+avion);
+            System.out.println(pistas_ID);
+        }
+    }//GEN-LAST:event_comboBox_pistas5ActionPerformed
 
     /**
      * @param args the command line arguments
