@@ -40,6 +40,7 @@ public class ServidorVuelos implements Runnable {
                 //mandar directo a ventana controlador los ids conforme se reciben
                 if (!datos.IDAviones.isEmpty()){
                     ClienteVControl VentanaC =  new ClienteVControl(mensaje);
+                    ClienteInfo VentanaI = new ClienteInfo(mensaje);
                     System.out.println("envie "+mensaje+" a ventana GUI!\n");
                     
                 }

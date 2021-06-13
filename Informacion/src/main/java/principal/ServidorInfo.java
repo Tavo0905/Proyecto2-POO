@@ -6,7 +6,10 @@ import java.net.Socket;
 
 public class ServidorInfo implements Runnable {
     
-    public ServidorInfo() {
+    ventanaInfo ventana;
+    
+    public ServidorInfo(ventanaInfo ventanaApp) {
+        ventana = ventanaApp;
         Thread hilo = new Thread(this);
         hilo.start();
     }
@@ -19,7 +22,8 @@ public class ServidorInfo implements Runnable {
                 Socket cliente = servidor.accept();
                 DataInputStream recibirMensaje = new DataInputStream(cliente.getInputStream());
                 String mensaje = recibirMensaje.readUTF();
-                System.out.println(mensaje);
+                ventana.jTextArea1.append(mensaje + "\n");
+                Thread.sleep(500); // Evita un ciclo infinito continuo
             }
         }
         catch (Exception e) {

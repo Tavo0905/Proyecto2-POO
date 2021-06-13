@@ -5,7 +5,10 @@ import java.io.IOException;
 public class MainInfo {
     
     public static void main(String[] args) throws IOException{
-        ServidorInfo server = new ServidorInfo();
+        ventanaInfo ventana = new ventanaInfo();
+        ventana.setVisible(true);
+        
+        ServidorInfo server = new ServidorInfo(ventana);
     }
     
 }
