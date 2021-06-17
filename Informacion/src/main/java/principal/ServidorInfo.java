@@ -22,7 +22,9 @@ public class ServidorInfo implements Runnable {
                 Socket cliente = servidor.accept();
                 DataInputStream recibirMensaje = new DataInputStream(cliente.getInputStream());
                 String mensaje = recibirMensaje.readUTF();
-                ventana.jTextArea1.append(mensaje + "\n");
+                Avion avionLlegada = new Avion(mensaje);
+                ventana.jTextArea1.append(avionLlegada.IDAvion + "\n");
+                ventana.jTextArea2.append(avionLlegada.estado + "\n");
                 Thread.sleep(500); // Evita un ciclo infinito continuo
             }
         }

@@ -13,12 +13,18 @@ public class Avion {
     int contadorInformacion;
     
     Avion(String ID){
-
-        IDAvion = ID.replace(ID.substring(0, ID.indexOf("_")), ""); // lo recibe por parametro
-        //ID.replace(ID.substring(0, ID.indexOf("_")), "");
-        //estado = ID;
-        
-        
+        IDAvion = ID.substring(0, ID.indexOf("_")); // lo recibe por parametro
+        ID = ID.replace(ID.substring(0, ID.indexOf("_") + 1), "");
+        ID = ID.replace(ID.substring(0, ID.indexOf("_") + 1), "");
+        estado = obtenerEstado(ID);
+    }
+    
+    String obtenerEstado(String id) {
+        if (id.equalsIgnoreCase("r"))
+            return "Retrasado";
+        else if (id.equalsIgnoreCase("t"))
+            return "A Tiempo";
+        return "";
     }
 
     int getTiempo(){
