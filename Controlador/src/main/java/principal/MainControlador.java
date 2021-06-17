@@ -10,5 +10,9 @@ public class MainControlador {
         
         //recibe desde ventana Control cuando se selecciona una pista
         ServidorVControl serverVentanaCont = new ServidorVControl(datos);
+        
+        //hilo que revisa aterrizando para ver si alguno ya aterrizó
+        hiloAterrizando hilo4 = new hiloAterrizando(datos);
+        hilo4.start();
     }
 }

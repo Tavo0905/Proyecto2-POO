@@ -41,7 +41,7 @@ public class ServidorVuelos implements Runnable {
                 if (!datos.IDAviones.isEmpty()){
                     ClienteVControl VentanaC =  new ClienteVControl(mensaje);
                     ClienteInfo VentanaI = new ClienteInfo(mensaje);
-                    System.out.println("envie "+mensaje+" a ventana GUI!\n");
+                    System.out.println("envie "+ mensaje +" a ventana GUI!\n");
                     
                 }
                 

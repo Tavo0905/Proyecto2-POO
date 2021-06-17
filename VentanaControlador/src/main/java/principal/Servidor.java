@@ -33,6 +33,15 @@ public class Servidor implements Runnable {
             else if("ID".equals(ventana.id_label5.getText())){
                 ventana.id_label5.setText(ID);
             }
+            else if("ID".equals(ventana.id_label6.getText())){
+                ventana.id_label6.setText(ID);
+            }
+            else if("ID".equals(ventana.id_label7.getText())){
+                ventana.id_label7.setText(ID);
+            }
+            else if("ID".equals(ventana.id_label8.getText())){
+                ventana.id_label8.setText(ID);
+            }
             
         }
     

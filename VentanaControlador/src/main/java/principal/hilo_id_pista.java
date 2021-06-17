@@ -33,7 +33,7 @@ public class hilo_id_pista extends Thread {
         
         while(!ventana.pistas_ID.isEmpty())
             {   
-                //enviar la info
+                //enviar la info , socket = 9999 envía a controlador
                 socketClient = new Cliente(ventana.pistas_ID.get(0));
                 //sacar info recien enviada de la lista para ir despejando
                 ventana.pistas_ID.remove(0);

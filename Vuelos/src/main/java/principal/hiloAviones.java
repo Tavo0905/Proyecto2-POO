@@ -5,16 +5,11 @@ import java.util.Random;
 
 
 
-
-
-
 public class hiloAviones extends Thread {
 
         Cliente socketClient;
         
-        
-       
-        
+         
         public void detener(){
             this.suspend();
         }
