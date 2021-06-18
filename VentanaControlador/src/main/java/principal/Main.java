@@ -14,10 +14,15 @@ public class Main {
         gui_ventanaControlador ventana = new gui_ventanaControlador();
         ventana.setVisible(true);
         
+        //socket 8888  = Controlador -> ventanaCont (aviones recien llegados)
         Servidor server = new Servidor(ventana);
+        
+        //socket 4300  = Controlador -> ventanaCont (aviones que ya aterrizaron)
+        ServidorControl2 server2 = new ServidorControl2(ventana);
         
         //socket 9999  = ventanaCont -> controlador
         Thread hilo = new hilo_id_pista(ventana);
+        
         hilo.start();
     }
     

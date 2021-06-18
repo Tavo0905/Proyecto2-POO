@@ -1,8 +1,7 @@
 
 package principal;
 
-import java.util.ArrayList;
-import java.util.Random;
+
 
 
 //se encarga de revisar aviones en arrayList Aterrizando, irles disminuyendo
@@ -12,6 +11,9 @@ import java.util.Random;
 public class hiloAterrizando extends Thread{
     
         BaseDatos datos;
+        
+        //4300 
+        ClienteVControl2 socketClient;
     
         hiloAterrizando(BaseDatos pDatos){
             datos = pDatos;
@@ -54,6 +56,13 @@ public class hiloAterrizando extends Thread{
                         if(avion.contadorAterrizaje!=0)
                            avion.contadorAterrizaje--; 
                         
+                        else if(avion.contadorAterrizaje==0)
+                            {
+                            //ID_Tipo en este momento = 8703_carga_r
+                                
+                            //cliente y enviarlo a ventana control 
+                            socketClient = new ClienteVControl2(avion.ID_Tipo);
+                            }
                         
                         }
                     } 

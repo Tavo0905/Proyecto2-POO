@@ -23,7 +23,7 @@ public class Avion {
                       //rand.nextInt((max - min) + 1) + min;
                       
         //contadorAterrizaje = rand.nextInt((35 - 1) + 1) + 1;
-        contadorAterrizaje = 35;
+        contadorAterrizaje = 15;
         //lo empezaremos a decrementar cuando se le seleccione una pista
         
         //se la asignamos cuando venga pista seleccionada desde ventanaCont 
