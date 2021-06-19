@@ -3,8 +3,8 @@ package principal;
 import java.util.Random;
 
 public class Avion {
-    String IDAvion;
-    String estado;
+    String IDAvion, estado, pista, compuerta;
+    int contadorAterrizaje;
     
     // ya no ocupa tiempo de llegada ni id al estar en controlador
     //public static int id = 0;
@@ -17,6 +17,9 @@ public class Avion {
         ID = ID.replace(ID.substring(0, ID.indexOf("_") + 1), "");
         ID = ID.replace(ID.substring(0, ID.indexOf("_") + 1), "");
         estado = obtenerEstado(ID);
+        pista = "";
+        compuerta = "";
+        contadorAterrizaje = -1;
     }
     
     String obtenerEstado(String id) {
@@ -31,8 +34,8 @@ public class Avion {
         return this.contadorInformacion;
     }
     
-    public void actualizarInfo(String nuevaInfo) {
-        estado = "Aterrizando";
-        
+    public void actualizarPista(String id, String nuevaPista) {
+        if (IDAvion.equals(id))
+            pista = nuevaPista;
     }
 }

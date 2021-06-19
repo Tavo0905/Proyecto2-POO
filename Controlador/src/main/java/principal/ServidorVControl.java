@@ -25,6 +25,7 @@ public class ServidorVControl implements Runnable {
                 System.out.println("\n===============================");
                 System.out.println("\nllegando a cont desde ventana : ");
                 System.out.println(mensaje);
+                ClienteInfo enviarInfo = new ClienteInfo(mensaje);
                 String[] id = mensaje.split("_");
                 String pista = id[0]+"_"+id[1];
                 String numeroAvion = id[2];
