@@ -4,13 +4,12 @@ import java.util.Random;
 
 public class Avion {
     String IDAvion, estado, pista, compuerta;
-    int contadorAterrizaje;
+    int contadorAterrizaje, contadorInformacion;
     
     // ya no ocupa tiempo de llegada ni id al estar en controlador
     //public static int id = 0;
     //int tiempoLlegada; 
 
-    int contadorInformacion;
     
     Avion(String ID){
         IDAvion = ID.substring(0, ID.indexOf("_")); // lo recibe por parametro
@@ -19,7 +18,7 @@ public class Avion {
         estado = obtenerEstado(ID);
         pista = "";
         compuerta = "";
-        contadorAterrizaje = -1;
+        contadorInformacion = 1000;
     }
     
     String obtenerEstado(String id) {
@@ -32,10 +31,5 @@ public class Avion {
 
     int getTiempo(){
         return this.contadorInformacion;
-    }
-    
-    public void actualizarPista(String id, String nuevaPista) {
-        if (IDAvion.equals(id))
-            pista = nuevaPista;
     }
 }

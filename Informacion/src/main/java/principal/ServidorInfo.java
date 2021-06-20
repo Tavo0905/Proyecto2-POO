@@ -26,7 +26,7 @@ public class ServidorInfo implements Runnable {
                 DataInputStream recibirMensaje = new DataInputStream(cliente.getInputStream());
                 String mensaje = recibirMensaje.readUTF();
                 String[] datos = mensaje.split("_");
-                if (!datos[0].equalsIgnoreCase("pista"))
+                if (!datos[0].equalsIgnoreCase("pista") && !datos[0].equalsIgnoreCase("Seleccionar"))
                     base.aviones.add(new Avion(mensaje));
                 else if (datos[0].equalsIgnoreCase("pista")){
                     for (Avion elemento: base.aviones) {

@@ -19,13 +19,15 @@ public class hiloInfoVentana extends Thread {
                 String aux = "";
                 ArrayList<Avion> copia = (ArrayList<Avion>) base.aviones.clone();
                 for (Avion elemento: copia) {
-                    System.out.println(elemento.IDAvion + ", " + elemento.estado);
-                    if (elemento.estado.equals("Aterrizando"))
+                    System.out.println(elemento.IDAvion + ", " + elemento.estado + ", " + elemento.contadorInformacion);
+                    if (elemento.estado.equals("Aterrizando") && (elemento.contadorInformacion == 1000))
                         elemento.contadorInformacion = 15;
-                    if (elemento.contadorInformacion > 0)
-                        elemento.contadorInformacion--;
-                    else if ((elemento.contadorInformacion == 0) && (elemento.estado.equals("Aterrizando"))) {
-                        elemento.estado = "Taxi";
+                    if (elemento.contadorInformacion != 1000) {
+                        if (elemento.contadorInformacion > 0)
+                            elemento.contadorInformacion--;
+                        else if (elemento.contadorInformacion == 0) {
+                            elemento.estado = "Taxi";
+                        }
                     }
                     aux += elemento.IDAvion + "    |    " + elemento.estado + "\n";
                 }
