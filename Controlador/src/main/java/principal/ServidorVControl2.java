@@ -31,6 +31,7 @@ public class ServidorVControl2 implements Runnable {
                 System.out.println("\nllegando a cont desde ventana 2.0 : ");
                 System.out.println(mensaje);
                 System.out.println("===============================\n");
+                ClienteInfo enviarInfo = new ClienteInfo(mensaje);
                 
                 
                 String[] id = mensaje.split("_");
@@ -56,7 +57,7 @@ public class ServidorVControl2 implements Runnable {
             }
         }
         catch (Exception e) {
-            System.out.println("Fallo la conexion del servidor.");
+            System.out.println("Fallo la conexion del servidor. Compuertas");
         }
     }
 }

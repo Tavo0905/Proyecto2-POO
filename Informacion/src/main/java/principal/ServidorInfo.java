@@ -26,7 +26,7 @@ public class ServidorInfo implements Runnable {
                 DataInputStream recibirMensaje = new DataInputStream(cliente.getInputStream());
                 String mensaje = recibirMensaje.readUTF();
                 String[] datos = mensaje.split("_");
-                if (!datos[0].equalsIgnoreCase("pista") && !datos[0].equalsIgnoreCase("Seleccionar"))
+                if (!datos[0].equalsIgnoreCase("pista") && !datos[0].equalsIgnoreCase("Seleccionar") && !datos[0].equalsIgnoreCase("compuerta"))
                     base.aviones.add(new Avion(mensaje));
                 else if (datos[0].equalsIgnoreCase("pista")){
                     for (Avion elemento: base.aviones) {
@@ -35,9 +35,17 @@ public class ServidorInfo implements Runnable {
                             elemento.estado = "Aterrizando";
                         }
                     }
+                }    
+                else if (datos[0].equalsIgnoreCase("compuerta")) {
+                    for (Avion elemento: base.aviones) {
+                        if (datos[2].equalsIgnoreCase(elemento.IDAvion)) {
+                            elemento.compuerta = datos[1];
+                            elemento.estado = "Puerta";
+                            System.out.println(elemento.estado);
+                        }
+                    }
                 }
-                System.out.println(base.aviones.size());
-                Thread.sleep(500); // Evita un ciclo infinito continuo
+                Thread.sleep(1000); // Evita un ciclo infinito continuo
             }
         }
         catch (Exception e) {

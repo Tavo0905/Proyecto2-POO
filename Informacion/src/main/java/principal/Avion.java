@@ -5,6 +5,7 @@ import java.util.Random;
 public class Avion {
     String IDAvion, estado, pista, compuerta;
     int contadorAterrizaje, contadorInformacion;
+    int contadorCompuerta;
     
     // ya no ocupa tiempo de llegada ni id al estar en controlador
     //public static int id = 0;
@@ -19,6 +20,7 @@ public class Avion {
         pista = "";
         compuerta = "";
         contadorInformacion = 1000;
+        contadorCompuerta = 1000;
     }
     
     String obtenerEstado(String id) {
