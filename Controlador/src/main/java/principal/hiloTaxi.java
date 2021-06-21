@@ -3,6 +3,9 @@
 package principal;
 
 //se encarga de revisar aviones en arrayList avionesTaxi, irles disminuyendo
+
+import java.util.concurrent.Semaphore;
+
 //el contador, y si alguno llega a 0, mandar esa info a ventanaCont para 
 //sacarlo de labels de compuerta!
 
@@ -13,9 +16,12 @@ public class hiloTaxi extends Thread{
         //2226 
         ClienteVControl3 socketClient;
     
-        hiloTaxi(BaseDatos pDatos){
+        Semaphore mutex;
+        
+        hiloTaxi(BaseDatos pDatos,Semaphore pMutex){
             datos = pDatos;
             //acordarme de darle .start() en Main, para no ponerlo acá
+            mutex = pMutex;
         }
     
         public void detener(){
@@ -43,7 +49,23 @@ public class hiloTaxi extends Thread{
                         {
                             System.out.println("error!");
                         }
-                
+                    //inicio del mutex
+                    try{
+                        mutex.acquire();
+                        try{
+                            //haga las varas
+                        
+                    }finally
+                        {
+                        mutex.release();
+                        }
+                    }catch(InterruptedException e){
+                            e.printStackTrace();
+                            }
+                }
+            
+        
+                    
                     for (Avion avion : datos.avionesTaxi)
                     {
                     //si ya tiene compuerta asignada:
@@ -76,6 +98,9 @@ public class hiloTaxi extends Thread{
                         
                         }
                     } 
+                    
+                    
+                    //fin del mutex!
                 }
                 //sleep 1 segundo (tick tiempo) aun si aterrizando == null
                 //(para que no se coma los recursos el loop infinito)
@@ -89,8 +114,7 @@ public class hiloTaxi extends Thread{
                 
                 
             }
-                System.out.println("me detuvieron...");
+                //System.out.println("me detuvieron...");
         }//end run()
     
     
-}

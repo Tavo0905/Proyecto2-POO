@@ -2,7 +2,7 @@
 package principal;
 
 
-
+import java.util.concurrent.Semaphore;
 
 //se encarga de revisar aviones en arrayList Aterrizando, irles disminuyendo
 //el contador, y si alguno llega a 0, mandar esa info a ventanaCont para 
@@ -14,9 +14,12 @@ public class hiloAterrizando extends Thread{
         
         //4300 
         ClienteVControl2 socketClient;
+        
+        Semaphore mutex;
     
-        hiloAterrizando(BaseDatos pDatos){
+        hiloAterrizando(BaseDatos pDatos,Semaphore pMutex){
             datos = pDatos;
+            mutex=pMutex;
             //acordarme de darle .start() en Main, para no ponerlo acá
         }
     
@@ -46,7 +49,10 @@ public class hiloAterrizando extends Thread{
                             System.out.println("error!");
                         }
                 
-                    for (Avion avion : datos.aterrizando)
+                    try{
+                        mutex.acquire();
+                        try{
+                            for (Avion avion : datos.aterrizando)
                     {
                     //si ya tiene pista asignada:
                     if(avion.pista!="")
@@ -63,7 +69,7 @@ public class hiloAterrizando extends Thread{
                             {
                             //ID_Tipo en este momento = 8703_carga_r
                                 
-                            //[ara que solo se agregue una vez cada avion
+                            //para que solo se agregue una vez cada avion
                             if(!datos.avionesTaxi.contains(avion)){
                                 //meter avion a arraylist avionesTaxi (solo 1 vez)
                                 datos.avionesTaxi.add(avion);
@@ -76,6 +82,12 @@ public class hiloAterrizando extends Thread{
                         
                         }
                     } 
+                        }finally{
+                            mutex.release();
+                        }
+                    }catch(InterruptedException e){
+                        e.printStackTrace();
+                    }
                 }
                 //sleep 1 segundo (tick tiempo) aun si aterrizando == null
                 //(para que no se coma los recursos el loop infinito)
