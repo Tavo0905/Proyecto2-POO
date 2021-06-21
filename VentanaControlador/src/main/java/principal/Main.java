@@ -20,10 +20,15 @@ public class Main {
         //socket 4300  = Controlador -> ventanaCont (aviones que ya aterrizaron)
         ServidorControl2 server2 = new ServidorControl2(ventana);
         
-        //socket 9999  = ventanaCont -> controlador
+        //socket 9999  = ventanaCont -> controlador (pistas seleccionadas)
         Thread hilo = new hilo_id_pista(ventana);
-        
         hilo.start();
+        
+        //socket 2114  = ventanaCont -> controlador (puertas desembarque)
+        Thread hilo2 = new hilo_id_compuerta(ventana);
+        hilo2.start();
+        
+        
     }
     
 }

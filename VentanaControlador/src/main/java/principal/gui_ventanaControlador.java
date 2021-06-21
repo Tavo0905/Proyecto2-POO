@@ -25,6 +25,11 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
     ArrayList<String> pistasEnUso = new ArrayList<>();
     //para enviar desde v.controlador a control, la pista asignada a tal avion
     ArrayList<String> pistas_ID = new ArrayList<>();
+    
+    //para setear los labels compuertas
+    ArrayList<String> puertasEnUso = new ArrayList<>();
+    //para enviar desde v.controlador a control, la pista asignada a tal avion
+    ArrayList<String> puertas_ID = new ArrayList<>();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -423,7 +428,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(comboBox_pistas8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -446,7 +451,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel12.setText("Pista:");
 
-        comboBox_comp_8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_8.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_8ActionPerformed(evt);
@@ -464,7 +469,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(comboBox_comp_8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel12Layout.setVerticalGroup(
             jPanel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -481,7 +486,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel13.setText("Pista:");
 
-        comboBox_comp_3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_3ActionPerformed(evt);
@@ -516,7 +521,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel14.setText("Pista:");
 
-        comboBox_comp_9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_9.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_9ActionPerformed(evt);
@@ -551,7 +556,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel15.setText("Pista:");
 
-        comboBox_comp_4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_4ActionPerformed(evt);
@@ -586,7 +591,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel16.setText("Pista:");
 
-        comboBox_comp_6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_6ActionPerformed(evt);
@@ -604,7 +609,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
                 .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(comboBox_comp_6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -621,7 +626,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel17.setText("Pista:");
 
-        comboBox_comp_5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_5ActionPerformed(evt);
@@ -658,7 +663,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel18.setText("Pista:");
 
-        comboBox_comp_7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_7.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_7ActionPerformed(evt);
@@ -693,7 +698,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel19.setText("Pista:");
 
-        comboBox_comp_1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_1ActionPerformed(evt);
@@ -728,7 +733,7 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
 
         jLabel20.setText("Pista:");
 
-        comboBox_comp_2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "pista_1", "pista_2", "pista_3", "pista_4", "pista_5", "pista_6" }));
+        comboBox_comp_2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccionar", "compuerta_1", "compuerta_2", "compuerta_3", "compuerta_4", "compuerta_5", "compuerta_6" }));
         comboBox_comp_2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 comboBox_comp_2ActionPerformed(evt);
@@ -1025,39 +1030,165 @@ public class gui_ventanaControlador extends javax.swing.JFrame {
     }//GEN-LAST:event_comboBox_pistas8ActionPerformed
 
     private void comboBox_comp_8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_8ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_8.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_8.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_8ActionPerformed
 
     private void comboBox_comp_3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_3ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_3.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_3.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_3ActionPerformed
 
     private void comboBox_comp_9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_9ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_9.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_9.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_9ActionPerformed
 
     private void comboBox_comp_4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_4ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_4.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_4.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_4ActionPerformed
 
     private void comboBox_comp_6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_6ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_6.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_6.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_6ActionPerformed
 
     private void comboBox_comp_5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_5ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_5.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_5.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_5ActionPerformed
 
     private void comboBox_comp_7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_7ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_7.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_7.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_7ActionPerformed
 
     private void comboBox_comp_1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_1ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_1.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_1.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_1ActionPerformed
 
     private void comboBox_comp_2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboBox_comp_2ActionPerformed
-        // TODO add your handling code here:
+        String seleccionado = comboBox_comp_2.getSelectedItem().toString();
+        if(puertasEnUso.contains(seleccionado))
+            JOptionPane.showMessageDialog(this,"Compuerta en uso, Favor escoger otra","warning",JOptionPane.WARNING_MESSAGE);
+        else{
+            System.out.println("Agregado con exito");
+            puertasEnUso.add(seleccionado);
+            //System.out.println(puertasEnUso);
+            
+            String avion = id_compuerta_2.getText();
+            puertas_ID.add(seleccionado+"_"+avion);
+            System.out.println("\n ---------- compuertas seleccionada: -----");
+            System.out.println(puertas_ID);
+            System.out.println(" ---------------- \n");
+            
+        }
     }//GEN-LAST:event_comboBox_comp_2ActionPerformed
 
     /**

@@ -51,12 +51,34 @@ public class ServidorControl2 implements Runnable{
         }
     
     public void setID(String ID){
-            if("ID".equals(ventana.id_label.getText())){
-                ventana.id_label.setText(ID);
+            if("ID".equals(ventana.id_compuerta_1.getText())){
+                ventana.id_compuerta_1.setText(ID);
             }
-            else if("ID".equals(ventana.id_label1.getText())){
-                ventana.id_label1.setText(ID);
+            else if("ID".equals(ventana.id_compuerta_2.getText())){
+                ventana.id_compuerta_2.setText(ID);
             }
+            else if("ID".equals(ventana.id_compuerta_3.getText())){
+                ventana.id_compuerta_3.setText(ID);
+            }
+            else if("ID".equals(ventana.id_compuerta_4.getText())){
+                ventana.id_compuerta_4.setText(ID);
+            }
+            else if("ID".equals(ventana.id_compuerta_5.getText())){
+                ventana.id_compuerta_5.setText(ID);
+            }
+            else if("ID".equals(ventana.id_compuerta_6.getText())){
+                ventana.id_compuerta_6.setText(ID);
+            }
+            else if("ID".equals(ventana.id_compuerta_7.getText())){
+                ventana.id_compuerta_7.setText(ID);
+            }
+            else if("ID".equals(ventana.id_compuerta_8.getText())){
+                ventana.id_compuerta_8.setText(ID);
+            }
+            else if("ID".equals(ventana.id_compuerta_9.getText())){
+                ventana.id_compuerta_9.setText(ID);
+            }
+            
             
             
         }
@@ -84,7 +106,8 @@ public class ServidorControl2 implements Runnable{
                 //ventana.pistasEnUso.remove("")
                 
                 //agregar a labels compuerta GUI avion ya aterrizado
-                
+                // solo una vez!
+                setID(mensaje);
                 
                 System.out.println("\nelimine "+mensaje+ " de ventana...\n");
             }

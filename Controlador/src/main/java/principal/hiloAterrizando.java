@@ -51,17 +51,27 @@ public class hiloAterrizando extends Thread{
                     //si ya tiene pista asignada:
                     if(avion.pista!="")
                         {
-                        System.out.println("\n"+avion.ID_Tipo+"  tiempo:  "+String.valueOf(avion.contadorAterrizaje));
+                        
                         //si es 0 quedese ahi -.-
-                        if(avion.contadorAterrizaje!=0)
-                           avion.contadorAterrizaje--; 
+                        if(avion.contadorAterrizaje!=0){
+                            System.out.println("\n"+avion.ID_Tipo+"  tiempo:  "+String.valueOf(avion.contadorAterrizaje));
+                            avion.contadorAterrizaje--;
+                        }
+                            
                         
                         else if(avion.contadorAterrizaje==0)
                             {
                             //ID_Tipo en este momento = 8703_carga_r
                                 
-                            //cliente y enviarlo a ventana control 
-                            socketClient = new ClienteVControl2(avion.ID_Tipo);
+                            //[ara que solo se agregue una vez cada avion
+                            if(!datos.avionesTaxi.contains(avion)){
+                                //meter avion a arraylist avionesTaxi (solo 1 vez)
+                                datos.avionesTaxi.add(avion);
+                                
+                                //cliente y enviarlo a ventana control 
+                                socketClient = new ClienteVControl2(avion.ID_Tipo);
+                            }
+                            
                             }
                         
                         }

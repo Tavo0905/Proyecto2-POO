@@ -730,7 +730,7 @@
                   <Component id="jLabel10" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="comboBox_pistas8" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="20" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -815,7 +815,7 @@
                   <Component id="jLabel12" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="comboBox_comp_8" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="7" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -852,12 +852,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -920,12 +920,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -988,12 +988,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -1056,12 +1056,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -1087,7 +1087,7 @@
                   <Component id="jLabel16" min="-2" pref="35" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="comboBox_comp_6" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="10" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -1124,12 +1124,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -1192,12 +1192,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -1265,12 +1265,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -1333,12 +1333,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
@@ -1401,12 +1401,12 @@
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="7">
                 <StringItem index="0" value="Seleccionar"/>
-                <StringItem index="1" value="pista_1"/>
-                <StringItem index="2" value="pista_2"/>
-                <StringItem index="3" value="pista_3"/>
-                <StringItem index="4" value="pista_4"/>
-                <StringItem index="5" value="pista_5"/>
-                <StringItem index="6" value="pista_6"/>
+                <StringItem index="1" value="compuerta_1"/>
+                <StringItem index="2" value="compuerta_2"/>
+                <StringItem index="3" value="compuerta_3"/>
+                <StringItem index="4" value="compuerta_4"/>
+                <StringItem index="5" value="compuerta_5"/>
+                <StringItem index="6" value="compuerta_6"/>
               </StringArray>
             </Property>
           </Properties>
