@@ -19,5 +19,9 @@ public class MainControlador {
         //hilo que revisa aterrizando para ver si alguno ya aterrizó
         hiloAterrizando hilo4 = new hiloAterrizando(datos);
         hilo4.start();
+        
+        //hilo que revisa avionesTaxi para ver si alguno ya llego a compuerta
+        hiloTaxi hilo5 = new hiloTaxi(datos);
+        hilo5.start();
     }
 }

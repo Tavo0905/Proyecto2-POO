@@ -30,28 +30,29 @@ public class ServidorVControl2 implements Runnable {
                 System.out.println("\n===============================");
                 System.out.println("\nllegando a cont desde ventana 2.0 : ");
                 System.out.println(mensaje);
-                //ClienteInfo enviarInfo = new ClienteInfo(mensaje);
-                /*
+                System.out.println("===============================\n");
+                
+                
                 String[] id = mensaje.split("_");
-                String pista = id[0]+"_"+id[1];
+                String compuerta = id[0]+"_"+id[1];
                 String numeroAvion = id[2];
                 
-                for (Avion avion : datos.aterrizando){
+                for (Avion avion : datos.avionesTaxi){
                     String[] datos = avion.ID_Tipo.split("_");
                     if(numeroAvion.equals(datos[0])){
                         System.out.println("\navion encontrado, agregando datos... ");
-                        avion.pista = pista;
-                        System.out.println("\npista agregada, iniciando aterrizaje");
+                        avion.compuerta = compuerta;
+                        System.out.println("compuerta agregada, iniciando desembarque");
                         
                         
                     }
                 }
-                */
-                //disminucion de contador aterrizaje se hará con
-                //hiloAterrizando (Controlador)
+                
+                //disminucion de contador taxi se hará con
+                //hiloTaxi (Controlador)
                 
                 
-                System.out.println("===============================\n");
+                
             }
         }
         catch (Exception e) {

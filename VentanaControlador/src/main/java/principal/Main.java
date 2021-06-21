@@ -28,6 +28,9 @@ public class Main {
         Thread hilo2 = new hilo_id_compuerta(ventana);
         hilo2.start();
         
+        //socket 2226  = Controlador -> ventanaCont (aviones que ya aterrizaron)
+        ServidorControl3 server3 = new ServidorControl3(ventana);
+        
         
     }
     
